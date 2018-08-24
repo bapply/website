@@ -1,14 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Bapply - Freelancing team</title>
-  <link rel="stylesheet" href="./styles.scss">
+  <link rel="stylesheet" href="./styles/index.scss">
 </head>
+
 <body>
-  <h1>Bapply</h1>
-  <script src="./main.js"></script>
+  <header id="header">
+    <nav>
+      <div class="container">
+        <div class="row w-100 justify-content-end">
+          <a class="col p-15 active" href="#hero">Home</a>
+          <a class="col p-15" href="#skills">Skills</a>
+          <a class="col p-15" href="#">About</a>
+          <a class="col p-15" href="#">Contact</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <section id="hero" class="page">
+    <div id="particles-js"></div>
+    <div class="container">
+      <div class="col">
+        <span class="logo">Bapply</span>
+        <p class="description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto reprehenderit omnis,
+          ad quod voluptate dolor optio officia saepe laboriosam commodi porro. Est eum deleniti harum alias explicabo dolorum
+          nisi neque?</p>
+      </div>
+    </div>
+  </section>
+  <section id="skills" class="page row align-items-end pb-10">
+    <div class="box col">
+      <div class="w-100 h-100 position-relative">
+        <div class="row">
+          <h1 class="position-absolute">Our Expertise</h1>
+        </div>
+        <div class="row skill-set-buttons">
+          <h3 class="skill-set">Frontend</h3>
+          <h3 class="skill-set">Backend</h3>
+          <h3 class="skill-set">Server</h3>
+        </div>
+        <div class="row skills" id="frontend">
+          <div class="col">
+            <div class="skill">SASS</div>
+            <div class="skill">JavaScript</div>
+            <div class="skill">TypeScript</div>
+            <div class="skill">React</div>
+          </div>
+          <div class="col">
+            <div class="skill">GoLang</div>
+            <div class="skill">NodeJS</div>
+            <div class="skill">PHP</div>
+            <div class="skill">Python</div>
+            <div class="skill">Ruby</div>
+          </div>
+          <div class="col">
+            <div class="skill">PostgreSQL</div>
+            <div class="skill">MongoDB</div>
+            <div class="skill">MySQL</div>
+            <div class="skill">Redis</div>
+            <div class="skill">Docker</div>
+            <div class="skill">Kubernetes</div>
+            <div class="skill">Cassandra</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container info">
+      <div class="col">
+        <h3>Header</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse voluptatem molestiae nemo deserunt doloribus quis,
+          rerum maiores possimus cupiditate, aliquam animi voluptates voluptatum necessitatibus quas ratione rem consequuntur
+          illo voluptate!</p>
+      </div>
+      <div class="col">
+        <h3>Header</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse voluptatem molestiae nemo deserunt doloribus quis,
+          rerum maiores possimus cupiditate, aliquam animi voluptates voluptatum necessitatibus quas ratione rem consequuntur
+          illo voluptate!</p>
+      </div>
+      <div class="col">
+        <h3>Header</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse voluptatem molestiae nemo deserunt doloribus quis,
+          rerum maiores possimus cupiditate, aliquam animi voluptates voluptatum necessitatibus quas ratione rem consequuntur
+          illo voluptate!</p>
+      </div>
+    </div>
+  </section>
+  <script src="./scripts/main.js"></script>
 </body>
+
 </html>

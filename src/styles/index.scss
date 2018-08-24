@@ -1,0 +1,21 @@
+@import "reboot";
+@import url("https://fonts.googleapis.com/css?family=Lato");
+
+body {
+  background-color: #ede7f6;
+  font-family: "Lato", sans-serif;
+  overflow-x: hidden;
+}
+
+// Utilites
+@import "mixins";
+@import "position";
+@import "border";
+@import "layout";
+@import "spacing";
+@import "text";
+
+// Sections
+@import "nav";
+@import "hero";
+@import "skills";

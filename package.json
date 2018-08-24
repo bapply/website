@@ -1,6 +1,7 @@
 {
   "dependencies": {
-    "parcel": "^1.9.7"
+    "parcel": "^1.9.7",
+    "particles.js": "^2.0.0"
   },
   "scripts": {
     "start": "parcel ./src/index.html",

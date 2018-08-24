@@ -1,0 +1,75 @@
+.container {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+
+  @include min-md {
+    width: 768px;
+    margin: 0 auto;
+  }
+
+  @include min-lg {
+    width: 1024px;
+    margin: 0 auto;
+  }
+
+  @include min-xl {
+    width: 1200px;
+    margin: 0 auto;
+  }
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
+.col {
+  display: flex;
+  flex-direction: column;
+  padding: 0 10px;
+}
+
+$justify: (
+  start: flex-start,
+  end: flex-end,
+  center: center,
+  between: space-between,
+  around: space-around
+);
+
+@each $align, $value in $justify {
+  .justify-content-#{$align} {
+    justify-content: #{$value};
+  }
+}
+
+$align: (
+  start: flex-start,
+  end: flex-end,
+  center: center
+);
+
+@each $align, $value in $align {
+  .align-items-#{$align} {
+    align-items: #{$value};
+  }
+}
+
+$widths: 100;
+@each $width in $widths {
+  .w-#{$width} {
+    width: #{$width + "%"};
+  }
+
+  .h-#{$width} {
+    height: #{$width + "%"};
+  }
+}
+
+.page {
+  height: 100vh;
+  box-sizing: border-box;
+}
