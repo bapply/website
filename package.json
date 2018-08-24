@@ -4,7 +4,7 @@
   },
   "scripts": {
     "start": "parcel ./src/index.html",
-    "build": "parcel build -d ./public --public-url https://bapply.github.io ./src/index.html"
+    "build": "parcel build -d ./public ./src/index.html"
   },
   "devDependencies": {
     "node-sass": "^4.9.3"
