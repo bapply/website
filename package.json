@@ -1,7 +1,8 @@
 {
   "dependencies": {
     "parcel": "^1.9.7",
-    "particles.js": "^2.0.0"
+    "particles.js": "^2.0.0",
+    "prettier": "^1.14.2"
   },
   "scripts": {
     "start": "parcel ./src/index.html",

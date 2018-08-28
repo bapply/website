@@ -1,5 +1,5 @@
 #hero {
-  background: linear-gradient(150deg, #7e57c2 0, #5e35b1 100%);
+  background-image: linear-gradient(135deg, #3b2667 10%, #bc78ec 100%);
   color: white;
   display: flex;
   align-items: center;
@@ -19,7 +19,7 @@
   .logo {
     font-size: 5rem;
     font-weight: bold;
-    text-shadow: 1px 1px 10px rgba(black, 0.3);
+    text-shadow: 1px 1px 10px rgba($black, 0.3);
     z-index: 2;
   }
 
@@ -30,7 +30,7 @@
     z-index: 2;
 
     @include min-md {
-      width: 40%;
+      width: 400px;
     }
   }
 }

@@ -7,7 +7,8 @@ nav {
   height: 80px;
   align-items: center;
   display: flex;
-  z-index: 2;
+  z-index: 2000;
+  transition: all 0.2s ease-out;
 
   a {
     color: white;
@@ -20,6 +21,15 @@ nav {
     &:hover,
     &:focus {
       border-bottom-color: #ffca28;
+    }
+  }
+
+  &.in-skills {
+    background-color: white;
+    box-shadow: 0 1px 10px rgba($black, 0.2);
+
+    a {
+      color: $black;
     }
   }
 }

@@ -1,3 +1,3 @@
-import "particles.js";
-
-particlesJS("particles-js", require("../../assets/particles.json"));
+import 'particles.js';
+import './scroll';
+particlesJS('particles-js', require('../../assets/particles.json'));
