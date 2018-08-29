@@ -12,11 +12,10 @@
   }
 
   form {
-    border-top: 2px solid rgba(#da0641, 0.1);
-    border-top-width: 0;
-    margin-bottom: 15px;
+    border-top: 2px solid #e27b70;
+    margin: 15px 0 30px;
     background-color: #333333;
-    box-shadow: inset 0 0 10px rgba($black, 0.8);
+    box-shadow: inset 0 0 20px rgba($black, 0.5);
     padding: 0;
     transition: all 0.2s ease-in-out;
 
@@ -26,14 +25,6 @@
       transition: all 0.2s ease-in-out;
     }
 
-    &.show {
-      padding: 30px 0;
-
-      .container {
-        height: 100%;
-      }
-    }
-
     .toggle {
       top: -16px;
       left: 50%;
@@ -41,7 +32,123 @@
       height: 32px;
       color: white;
       font-size: 1.1rem;
+      opacity: 1;
+      visibility: visible;
+      user-select: none;
+
+      .btn {
+        background: transparent;
+        outline: none !important;
+        cursor: pointer;
+        transition: all 0.2s ease;
+        position: relative;
+        display: inline-block;
+        width: 180px;
+        height: 40px;
+        line-height: 38px;
+        padding: 0;
+        border: none;
+        margin-top: -10px;
+
+        span {
+          position: relative;
+          display: block;
+          width: 100%;
+          height: 100%;
+          text-align: center;
+        }
+        &:before,
+        &:after {
+          position: absolute;
+          content: '';
+          right: 0;
+          top: 0;
+          background: rgba($white, 0.4);
+          transition: all 0.3s ease;
+        }
+        &:before {
+          height: 50%;
+          width: 2px;
+        }
+        &:after {
+          width: 20%;
+          height: 2px;
+        }
+        &:hover:before {
+          height: 100%;
+        }
+        &:hover:after {
+          width: 100%;
+        }
+        span:before,
+        span:after {
+          position: absolute;
+          content: '';
+          left: 0;
+          bottom: 0;
+          background: rgba($white, 0.4);
+          transition: all 0.3s ease;
+        }
+        span:before {
+          width: 2px;
+          height: 50%;
+        }
+        span:after {
+          width: 20%;
+          height: 2px;
+        }
+        span:hover:before {
+          height: 100%;
+        }
+        span:hover:after {
+          width: 100%;
+        }
+      }
     }
+
+    &.show {
+      border-top-width: 0;
+      padding: 30px 0;
+
+      .toggle {
+        opacity: 0;
+        visibility: hidden;
+      }
+
+      .container {
+        height: 384px;
+      }
+    }
+  }
+
+  input,
+  textarea {
+    width: 100%;
+    font-size: 1rem;
+    border-radius: 4px;
+    outline: none;
+    border: 1px solid rgba($black, 0.2);
+    z-index: 1;
+    padding: 14px 16px 0;
+  }
+
+  input {
+    height: 48px;
+  }
+
+  textarea {
+    height: 200px;
+    padding-top: 20px;
+  }
+
+  label {
+    position: absolute;
+    top: 10px;
+    left: 16px;
+    z-index: 2;
+    font-size: 1.2rem;
+    transition: all 0.2s ease-out;
+    color: rgba($black, 0.8);
   }
 
   .form-group {
@@ -49,36 +156,6 @@
     width: 400px;
     min-height: 48px;
     margin-bottom: 10px;
-
-    input,
-    textarea {
-      width: 100%;
-      font-size: 1rem;
-      border-radius: 4px;
-      outline: none;
-      border: 1px solid rgba($black, 0.2);
-      z-index: 1;
-      padding: 14px 16px 0;
-    }
-
-    input {
-      height: 48px;
-    }
-
-    textarea {
-      height: 200px;
-      padding-top: 20px;
-    }
-
-    label {
-      position: absolute;
-      top: 10px;
-      left: 16px;
-      z-index: 2;
-      font-size: 1.2rem;
-      transition: all 0.2s ease-out;
-      color: rgba($black, 0.8);
-    }
 
     &.focus {
       label {
@@ -97,12 +174,13 @@
       align-items: center;
       padding: 12px 0;
       font-size: 1.1rem;
-      border: 1px solid transparent;
+      border: 1px solid rgba($white, 0.4);
+      background-color: transparent;
       color: white;
       transition: all 0.2s ease-out;
 
       &:hover {
-        text-shadow: 1px 1px 5px rgba($black, 0.2);
+        text-shadow: 1px 1px 5px rgba($black, 0.3);
       }
 
       &:focus,
@@ -114,24 +192,21 @@
     .submit {
       flex: 2 0 200px;
       border-radius: 5px 0 0 5px;
-      background-color: #0470dc;
-      border-color: #0362c2;
-      border-right: none;
 
       &:hover {
         background-color: #0362c2;
+        border-color: rgba(5, 109, 214, 0.25);
       }
     }
 
     .cancel {
       flex: 1 0 100px;
       border-radius: 0 5px 5px 0;
-      background-color: #da0641;
       border-left: none;
-      border-color: #c4063b;
 
       &:hover {
         background-color: #c4063b;
+        border-color: rgba(206, 8, 64, 0.25);
       }
     }
   }

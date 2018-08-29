@@ -18,3 +18,8 @@ document.querySelector('form .toggle').addEventListener('click', () => {
     form.classList.add('show');
   }
 });
+
+document.querySelector('form .cancel').addEventListener('click', e => {
+  e.preventDefault();
+  form.classList.remove('show');
+});
