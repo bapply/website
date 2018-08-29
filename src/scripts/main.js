@@ -1,4 +1,5 @@
 import 'particles.js';
+import './form';
 import Parallax from './parallax';
 
 particlesJS('particles-js', require('../../assets/particles.json'));
@@ -44,7 +45,28 @@ const parallaxOptions = {
       height: '80px',
       'font-size': '1.2rem',
     },
-    81: {
+    20: {
+      'background-color': 'transparent',
+      'box-shadow': 'none',
+      color: 'white',
+      height: '80px',
+      'font-size': '1.15rem',
+    },
+    40: {
+      'background-color': 'transparent',
+      'box-shadow': 'none',
+      color: 'white',
+      height: '80px',
+      'font-size': '1.1rem',
+    },
+    60: {
+      'background-color': 'transparent',
+      'box-shadow': 'none',
+      color: 'white',
+      height: '80px',
+      'font-size': '1.05rem',
+    },
+    80: {
       'background-color': 'white',
       'box-shadow': '0 1px 10px rgba(0, 0, 0, 0.2)',
       color: 'black',
@@ -67,6 +89,9 @@ const parallaxOptions = {
     0: {
       'border-bottom-color': 'transparent',
     },
+    '#hero': {
+      'border-bottom-color': 'transparent',
+    },
     '#skills': {
       'border-bottom-color': '#ffca28',
     },
@@ -78,7 +103,24 @@ const parallaxOptions = {
     0: {
       'border-bottom-color': 'transparent',
     },
+    '#skills': {
+      'border-bottom-color': 'transparent',
+    },
     '#process': {
+      'border-bottom-color': '#ffca28',
+    },
+    '#contact': {
+      'border-bottom-color': 'transparent',
+    },
+  },
+  '#header nav .contact': {
+    0: {
+      'border-bottom-color': 'transparent',
+    },
+    '#process': {
+      'border-bottom-color': 'transparent',
+    },
+    '#contact': {
       'border-bottom-color': '#ffca28',
     },
   },

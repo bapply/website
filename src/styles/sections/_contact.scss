@@ -1,0 +1,138 @@
+#contact {
+  background-image: linear-gradient(135deg, #ff9d6c 10%, #bb4e75 100%);
+
+  h3 {
+    font-size: 3rem;
+    color: white;
+  }
+
+  h3,
+  .description {
+    text-shadow: 1px 1px 10px rgba($black, $alpha: 0.1);
+  }
+
+  form {
+    border-top: 2px solid rgba(#da0641, 0.1);
+    border-top-width: 0;
+    margin-bottom: 15px;
+    background-color: #333333;
+    box-shadow: inset 0 0 10px rgba($black, 0.8);
+    padding: 0;
+    transition: all 0.2s ease-in-out;
+
+    .container {
+      height: 0;
+      overflow: hidden;
+      transition: all 0.2s ease-in-out;
+    }
+
+    &.show {
+      padding: 30px 0;
+
+      .container {
+        height: 100%;
+      }
+    }
+
+    .toggle {
+      top: -16px;
+      left: 50%;
+      transform: translateX(-50%);
+      height: 32px;
+      color: white;
+      font-size: 1.1rem;
+    }
+  }
+
+  .form-group {
+    position: relative;
+    width: 400px;
+    min-height: 48px;
+    margin-bottom: 10px;
+
+    input,
+    textarea {
+      width: 100%;
+      font-size: 1rem;
+      border-radius: 4px;
+      outline: none;
+      border: 1px solid rgba($black, 0.2);
+      z-index: 1;
+      padding: 14px 16px 0;
+    }
+
+    input {
+      height: 48px;
+    }
+
+    textarea {
+      height: 200px;
+      padding-top: 20px;
+    }
+
+    label {
+      position: absolute;
+      top: 10px;
+      left: 16px;
+      z-index: 2;
+      font-size: 1.2rem;
+      transition: all 0.2s ease-out;
+      color: rgba($black, 0.8);
+    }
+
+    &.focus {
+      label {
+        top: 4px;
+        font-size: 0.8rem;
+        color: rgba($black, 0.6);
+      }
+    }
+  }
+
+  .button-group {
+    width: 300px;
+
+    button {
+      text-align: center;
+      align-items: center;
+      padding: 12px 0;
+      font-size: 1.1rem;
+      border: 1px solid transparent;
+      color: white;
+      transition: all 0.2s ease-out;
+
+      &:hover {
+        text-shadow: 1px 1px 5px rgba($black, 0.2);
+      }
+
+      &:focus,
+      &:active {
+        outline: none;
+      }
+    }
+
+    .submit {
+      flex: 2 0 200px;
+      border-radius: 5px 0 0 5px;
+      background-color: #0470dc;
+      border-color: #0362c2;
+      border-right: none;
+
+      &:hover {
+        background-color: #0362c2;
+      }
+    }
+
+    .cancel {
+      flex: 1 0 100px;
+      border-radius: 0 5px 5px 0;
+      background-color: #da0641;
+      border-left: none;
+      border-color: #c4063b;
+
+      &:hover {
+        background-color: #c4063b;
+      }
+    }
+  }
+}
