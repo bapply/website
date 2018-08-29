@@ -21,13 +21,19 @@
     font-weight: bold;
     text-shadow: 1px 1px 10px rgba($black, 0.3);
     z-index: 2;
+    top: -120px;
+
+    @include max-md {
+      letter-spacing: 1px !important;
+    }
   }
 
   .description {
     border-top: 3px solid #ffca28;
     padding-top: 20px;
-    width: 100%;
+    width: calc(100vw - 100px);
     z-index: 2;
+    top: 0;
 
     @include min-md {
       width: 400px;
