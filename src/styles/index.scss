@@ -17,6 +17,8 @@ body {
 @import 'text';
 
 // Sections
-@import 'nav';
-@import 'hero';
-@import 'skills';
+@import 'sections/nav';
+@import 'sections/hero';
+@import 'sections/skills';
+@import 'sections/image';
+@import 'sections/process';

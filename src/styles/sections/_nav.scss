@@ -1,0 +1,27 @@
+nav {
+  background-color: transparent;
+  color: white;
+  font-size: 1.2rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 80px;
+  align-items: center;
+  display: flex;
+  z-index: 2000;
+  transition: all 0.2s ease-out;
+
+  a {
+    color: inherit;
+    font-size: inherit;
+    border-bottom: 3px solid transparent;
+    transition: all 0.2s ease-out;
+    user-select: none;
+
+    &:hover,
+    &:focus {
+      border-bottom-color: #ffca28 !important;
+    }
+  }
+}
