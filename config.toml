@@ -1,0 +1,39 @@
+# Site settings
+baseurl = "/"
+languageCode = "en-us"
+languageLang = "en"
+title = "Bapply - Web Development Freelancing Team"
+theme = "syna"
+themesDir = "themes"
+enableGitInfo = true
+disableKinds = ["RSS", "taxonomy", "taxonomyTerm"]
+
+[outputs]
+  home = ["HTML", "JSON"]
+
+[frontmatter]
+date = ["date", "lastmod"]
+lastmod = ["lastmod", ":git", "date"]
+
+# Google Analytics tracking
+googleAnalytics = ""
+
+[params]
+  name = "Bapply"
+  description = "Web Development Freelancing Team"
+  debug = true
+
+  [params.style]
+    background = "white"
+
+  # Theme customizations
+  # Assets relative to 'static/'
+  [params.custom]
+    favicon = "favicon.ico"
+    favicon_ico_sizes = "16x16 32x32"
+    favicon_png = "favicon.png"
+    favicon_svg = "favicon.svg"
+    css = ["styles.css"]
+
+  [params.fontawesome]
+    disabled = true

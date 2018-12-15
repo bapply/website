@@ -1,0 +1,63 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+header {
+  background: #fafafa;
+  height: 100vh;
+}
+
+header #particles-js {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+}
+
+header .title {
+  font-size: 100px;
+  font-weight: 800;
+  max-width: 1100px;
+}
+
+header .subtitle {
+  font-size: 36px;
+  font-weight: 500;
+  padding-left: 10px;
+  max-width: 800px;
+  margin-right: 10px;
+  color: #b7b7b7;
+}
+
+header .data-container {
+  height: 100%;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
+
+header .subtitle .substitude {
+  color: black;
+}
+
+.substitude {
+  display: inline-block;
+  position: relative;
+  width: 550px;
+  height: 34px;
+}
+
+.substitude span {
+  display: inline;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 1;
+  visibility: visible;
+  transition: all 0.5s ease-out;
+}
+
+.substitude span.hidden {
+  left: 50;
+  opacity: 0;
+  visibility: hidden;
+}

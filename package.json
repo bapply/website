@@ -1,0 +1,24 @@
+{
+  "name": "bapply",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:bapply/bapply.github.io.git",
+  "author": "Mahdi Pourismaiel <mpourismaiel@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "^8.0.4",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "css-loader": "^1.0.1",
+    "extract-text-webpack-plugin": "^3.0.2",
+    "file-loader": "^2.0.0",
+    "mini-css-extract-plugin": "^0.4.5",
+    "node-sass": "^4.10.0",
+    "sass-loader": "^7.1.0",
+    "style-loader": "^0.23.1",
+    "url-loader": "^1.1.2",
+    "webpack": "^4.27.0",
+    "webpack-cli": "^3.1.2"
+  }
+}

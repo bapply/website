@@ -1,0 +1,33 @@
+{{- $self := . -}}
+{{- if .Params.particles -}}
+  {{- .page_scratch.Add "js" (dict "file" "syna-hero.js") -}}
+{{- end -}}
+{{- $bg := .self.Scratch.Get "bg" }}
+
+{{ "<!-- Hero -->" | safeHTML }}
+<header id="{{ .Name }}">
+  <div id="particles-js"></div>
+  <div class="data-container col-12 px-5">
+    {{- with .Params.title }}
+    <div class="row">
+      <h1 class="title">
+        {{- replaceRE "%color:(#[\\d\\w]{3,6}|\\w+)%(.*)%color%" "<span style='color: $1'>$2</span>" . | safeHTML -}}
+      </h1>
+    </div>
+    {{- end -}}
+    {{- with .Params.subtitle }}
+    <div class="row">
+      <h3 class="subtitle">
+        {{- .text | markdownify -}}
+        {{- if .substitude }}
+          <div class="substitude">
+            {{- range .substitude }}
+              <span class="hidden">{{ . }}</span>
+            {{- end }}
+          </div>
+        {{- end }}
+        </h3>
+    </div>
+    {{- end -}}
+  </div>
+</header>
